@@ -1,199 +1,102 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="1.0">
-<!-- Initial Greetings -->
+    <!-- Initial Greetings -->
     <category>
         <pattern>HELLO</pattern>
-        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
+        <template>Hi! I'm your career guidance assistant for computer science graduates. I'll help match your strengths and preferences to suitable computing careers. Are you ready to begin? (Type YES to continue)</template>
     </category>
     
     <category>
         <pattern>HI</pattern>
         <template><srai>HELLO</srai></template>
     </category>
-    
-    <category>
-        <pattern>hi</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
-    
-    <category>
-        <pattern>Hi</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
-    
-    <category>
-        <pattern>HEY</pattern>
-        <template><srai>HELLO</srai></template>
-    </category>
 
     <!-- Main Decision Tree -->
     <category>
         <pattern>YES</pattern>
-        <template>What interests you more:
-            A) Building and creating things
-            B) Analyzing and solving problems
+        <template>As a computer science graduate, which of these areas aligns best with your academic strengths?
+            1) Frontend Development (Strong in UI/UX and client-side programming)
+            2) Backend Development (Excellence in algorithms and data structures)
+            3) Data Science (Strong in mathematics and statistical analysis)
+            4) Cybersecurity (Focus on system security and network protocols)
+            5) Software Architecture (Expertise in system design and integration)
             
-            Please type A or B.</template>
+            Please type a number 1-5.</template>
     </category>
     
-    <category>
-        <pattern>yes</pattern>
-        <template>What interests you more:
-            A) Building and creating things
-            B) Analyzing and solving problems
-            
-            Please type A or B.</template>
-    </category>
-    
-    <category>
-        <pattern>Yes</pattern>
-        <template>What interests you more:
-            A) Building and creating things
-            B) Analyzing and solving problems
-            
-            Please type A or B.</template>
-    </category>
-    
-    <!-- Path A Branch -->
-    <category>
-        <pattern>A</pattern>
-        <template>Do you prefer:
-            1) Creating visual, user-facing applications
-            2) Building backend systems and infrastructure
-            
-            Please type 1 or 2.</template>
-    </category>
-    
-    <category>
-        <pattern>a</pattern>
-        <template>Do you prefer:
-            1) Creating visual, user-facing applications
-            2) Building backend systems and infrastructure
-            
-            Please type 1 or 2.</template>
-    </category>
-    
-    <!-- Path B Branch -->
-    <category>
-        <pattern>B</pattern>
-        <template>Which appeals to you more:
-            1) Working with data and patterns
-            2) Protecting systems and information
-            
-            Please type 1 or 2.</template>
-    </category>
-    
-    <category>
-        <pattern>b</pattern>
-        <template>Which appeals to you more:
-            1) Working with data and patterns
-            2) Protecting systems and information
-            
-            Please type 1 or 2.</template>
-    </category>
-
-    <!-- Basic number responses -->
+    <!-- Career Recommendations -->
     <category>
         <pattern>1</pattern>
-        <template>Based on your interests, I recommend a career as a Frontend Developer! Would you like to learn more? (Type YES or NO)</template>
+        <template>Based on your computer science background and interests, I recommend a career as a Frontend Developer!
+    
+    Here are key details about this career:
+    - Degree Requirement: Computer Science degree with focus on web technologies
+    - Core CS Skills Used: Object-oriented programming, software design patterns
+    - Technical Skills: HTML, CSS, JavaScript, UI/UX frameworks
+    - Average Salary: $75,000-$150,000
+    - Growth Rate: 23% through 2030
+    - Work Environment: Tech companies, digital agencies
+    
+    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
     </category>
-
+    
     <category>
         <pattern>2</pattern>
-        <template>Based on your interests, I recommend a career as a DevOps Engineer! Would you like to learn more? (Type YES or NO)</template>
-    </category>
-
-    <!-- Basic NO responses -->
-    <category>
-        <pattern>NO</pattern>
-        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+        <template>Based on your computer science background and interests, I recommend a career as a Backend Developer!
+    
+    Here are key details about this career:
+    - Degree Requirement: Computer Science degree with focus on algorithms and databases
+    - Core CS Skills Used: Data structures, system design, database management
+    - Technical Skills: Java, Python, SQL, APIs
+    - Average Salary: $85,000-$160,000
+    - Growth Rate: 25% through 2030
+    - Work Environment: Software companies, enterprises
+    
+    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
     </category>
     
     <category>
-        <pattern>no</pattern>
-        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+        <pattern>3</pattern>
+        <template>Based on your computer science background and interests, I recommend a career as a Data Scientist!
+    
+    Here are key details about this career:
+    - Degree Requirement: Computer Science degree with focus on statistics and mathematics
+    - Core CS Skills Used: Algorithm design, statistical analysis, machine learning
+    - Technical Skills: Python, R, Machine Learning, Statistics
+    - Average Salary: $90,000-$165,000
+    - Growth Rate: 36% through 2030
+    - Work Environment: Tech companies, research firms
+    
+    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
     </category>
     
     <category>
-        <pattern>No</pattern>
-        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
-    </category>
-
-    <!-- Career Information -->
-    <category>
-        <pattern>YES</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
-        <template>Here are key details about your recommended career:
-
-Frontend Developer:
-- Average salary: $75,000-$150,000
-- Skills: HTML, CSS, JavaScript, UI/UX
-- Growth rate: 23% through 2030
-- Work environment: Tech companies, agencies
-
-Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
-    </category>
-
-    <category>
-        <pattern>yes</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
-        <template>Here are key details about your recommended career:
-
-Frontend Developer:
-- Average salary: $75,000-$150,000
-- Skills: HTML, CSS, JavaScript, UI/UX
-- Growth rate: 23% through 2030
-- Work environment: Tech companies, agencies
-
-Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
-    </category>
-    <!-- NO Response Patterns -->
-    <category>
-        <pattern>NO</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
-        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+        <pattern>4</pattern>
+        <template>Based on your computer science background and interests, I recommend a career as a Cybersecurity Analyst!
+    
+    Here are key details about this career:
+    - Degree Requirement: Computer Science degree with focus on network security
+    - Core CS Skills Used: Network protocols, security algorithms, system architecture
+    - Technical Skills: Network security, threat analysis, security tools
+    - Average Salary: $85,000-$155,000
+    - Growth Rate: 31% through 2030
+    - Work Environment: Security firms, corporations
+    
+    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
     </category>
     
     <category>
-        <pattern>no</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
-        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
-    </category>
+        <pattern>5</pattern>
+        <template>Based on your computer science background and interests, I recommend a career as a Software Architect!
     
-    <category>
-        <pattern>No</pattern>
-        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
-        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
-    </category>
-
-    <!-- Exit Options -->
-    <category>
-        <pattern>GOODBYE</pattern>
-        <template>Thank you for using the career guidance assistant. Good luck with your career journey!</template>
-    </category>
+    Here are key details about this career:
+    - Degree Requirement: Computer Science degree with focus on system design
+    - Core CS Skills Used: Software architecture, design patterns, system integration
+    - Technical Skills: Cloud platforms, system design, enterprise architecture
+    - Average Salary: $95,000-$160,000
+    - Growth Rate: 25% through 2030
+    - Work Environment: Technology companies, enterprises
     
-    <category>
-        <pattern>goodbye</pattern>
-        <template>Thank you for using the career guidance assistant. Good luck with your career journey!</template>
-    </category>
-    
-    <category>
-        <pattern>Goodbye</pattern>
-        <template>Thank you for using the career guidance assistant. Good luck with your career journey!</template>
-    </category>
-
-    <category>
-        <pattern>RESTART</pattern>
-        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
-    </category>
-    
-    <category>
-        <pattern>restart</pattern>
-        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
-    </category>
-    
-    <category>
-        <pattern>Restart</pattern>
-        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
+    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
     </category>
 </aiml>

@@ -1,9 +1,199 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml>
+<aiml version="1.0">
+<!-- Initial Greetings -->
     <category>
         <pattern>HELLO</pattern>
-        <template>
-            Hi! I'm your career guidance assistant. Let me help you find the perfect computing career path.
-        </template>
+        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
+    </category>
+    
+    <category>
+        <pattern>HI</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>hi</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>Hi</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+    
+    <category>
+        <pattern>HEY</pattern>
+        <template><srai>HELLO</srai></template>
+    </category>
+
+    <!-- Main Decision Tree -->
+    <category>
+        <pattern>YES</pattern>
+        <template>What interests you more:
+            A) Building and creating things
+            B) Analyzing and solving problems
+            
+            Please type A or B.</template>
+    </category>
+    
+    <category>
+        <pattern>yes</pattern>
+        <template>What interests you more:
+            A) Building and creating things
+            B) Analyzing and solving problems
+            
+            Please type A or B.</template>
+    </category>
+    
+    <category>
+        <pattern>Yes</pattern>
+        <template>What interests you more:
+            A) Building and creating things
+            B) Analyzing and solving problems
+            
+            Please type A or B.</template>
+    </category>
+    
+    <!-- Path A Branch -->
+    <category>
+        <pattern>A</pattern>
+        <template>Do you prefer:
+            1) Creating visual, user-facing applications
+            2) Building backend systems and infrastructure
+            
+            Please type 1 or 2.</template>
+    </category>
+    
+    <category>
+        <pattern>a</pattern>
+        <template>Do you prefer:
+            1) Creating visual, user-facing applications
+            2) Building backend systems and infrastructure
+            
+            Please type 1 or 2.</template>
+    </category>
+    
+    <!-- Path B Branch -->
+    <category>
+        <pattern>B</pattern>
+        <template>Which appeals to you more:
+            1) Working with data and patterns
+            2) Protecting systems and information
+            
+            Please type 1 or 2.</template>
+    </category>
+    
+    <category>
+        <pattern>b</pattern>
+        <template>Which appeals to you more:
+            1) Working with data and patterns
+            2) Protecting systems and information
+            
+            Please type 1 or 2.</template>
+    </category>
+
+    <!-- Basic number responses -->
+    <category>
+        <pattern>1</pattern>
+        <template>Based on your interests, I recommend a career as a Frontend Developer! Would you like to learn more? (Type YES or NO)</template>
+    </category>
+
+    <category>
+        <pattern>2</pattern>
+        <template>Based on your interests, I recommend a career as a DevOps Engineer! Would you like to learn more? (Type YES or NO)</template>
+    </category>
+
+    <!-- Basic NO responses -->
+    <category>
+        <pattern>NO</pattern>
+        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+    </category>
+    
+    <category>
+        <pattern>no</pattern>
+        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+    </category>
+    
+    <category>
+        <pattern>No</pattern>
+        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+    </category>
+
+    <!-- Career Information -->
+    <category>
+        <pattern>YES</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
+        <template>Here are key details about your recommended career:
+
+Frontend Developer:
+- Average salary: $75,000-$150,000
+- Skills: HTML, CSS, JavaScript, UI/UX
+- Growth rate: 23% through 2030
+- Work environment: Tech companies, agencies
+
+Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    </category>
+
+    <category>
+        <pattern>yes</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
+        <template>Here are key details about your recommended career:
+
+Frontend Developer:
+- Average salary: $75,000-$150,000
+- Skills: HTML, CSS, JavaScript, UI/UX
+- Growth rate: 23% through 2030
+- Work environment: Tech companies, agencies
+
+Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    </category>
+    <!-- NO Response Patterns -->
+    <category>
+        <pattern>NO</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
+        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+    </category>
+    
+    <category>
+        <pattern>no</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
+        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+    </category>
+    
+    <category>
+        <pattern>No</pattern>
+        <that>WOULD YOU LIKE TO LEARN MORE TYPE YES OR NO</that>
+        <template>Thank you for using the career guidance assistant. Feel free to come back if you have more questions!</template>
+    </category>
+
+    <!-- Exit Options -->
+    <category>
+        <pattern>GOODBYE</pattern>
+        <template>Thank you for using the career guidance assistant. Good luck with your career journey!</template>
+    </category>
+    
+    <category>
+        <pattern>goodbye</pattern>
+        <template>Thank you for using the career guidance assistant. Good luck with your career journey!</template>
+    </category>
+    
+    <category>
+        <pattern>Goodbye</pattern>
+        <template>Thank you for using the career guidance assistant. Good luck with your career journey!</template>
+    </category>
+
+    <category>
+        <pattern>RESTART</pattern>
+        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
+    </category>
+    
+    <category>
+        <pattern>restart</pattern>
+        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
+    </category>
+    
+    <category>
+        <pattern>Restart</pattern>
+        <template>Hi! I'm your career guidance assistant. I'll help you find the perfect computing career path. Are you ready to begin? (Type YES to continue)</template>
     </category>
 </aiml>

@@ -37,7 +37,7 @@
     - Growth Rate: 23% through 2030
     - Work Environment: Tech companies, digital agencies
     
-    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    Type GOODBYE to end our conversation.</template>
     </category>
     
     <category>
@@ -52,7 +52,7 @@
     - Growth Rate: 25% through 2030
     - Work Environment: Software companies, enterprises
     
-    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    Type GOODBYE to end our conversation.</template>
     </category>
     
     <category>
@@ -67,7 +67,7 @@
     - Growth Rate: 36% through 2030
     - Work Environment: Tech companies, research firms
     
-    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    Type GOODBYE to end our conversation.</template>
     </category>
     
     <category>
@@ -82,7 +82,7 @@
     - Growth Rate: 31% through 2030
     - Work Environment: Security firms, corporations
     
-    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    Type GOODBYE to end our conversation.</template>
     </category>
     
     <category>
@@ -97,6 +97,6 @@
     - Growth Rate: 25% through 2030
     - Work Environment: Technology companies, enterprises
     
-    Type GOODBYE to end our conversation or RESTART to explore other careers.</template>
+    Type GOODBYE to end our conversation.</template>
     </category>
 </aiml>
